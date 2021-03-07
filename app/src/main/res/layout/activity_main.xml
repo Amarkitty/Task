@@ -10,12 +10,11 @@
         android:id="@+id/includeToolbar"
         layout="@layout/ic_toolbar" />
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottomLayout"
-        android:layout_below="@+id/includeToolbar"
-        android:nestedScrollingEnabled="true">
+        android:layout_below="@+id/includeToolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +27,7 @@
                 android:layout_height="match_parent" />
 
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
         android:id="@+id/bottomLayout"
